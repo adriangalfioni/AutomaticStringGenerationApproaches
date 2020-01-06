@@ -1,0 +1,34 @@
+---------------------------------------------------------
+Generación automática de cadenas basada en expresiones
+regulares para mejorar el testing aleatorio de software
+
+Adrián Galfioni
+---------------------------------------------------------
+
+Programa para comparar algoritmos de generación de cadenas válidas Bounded Exhaustive Generation
+y Field Exhaustive Generation aplicados a las expresiones regulares de los literales enteros decimales,
+literales enteros hexadecimales y literales decimales de punto flotante del lenguaje Java.
+
+\\ Instrucciones de uso:
+
+- Ejecutar validGenerationApproachesComparison.jar con los parámetros necesarios, a ser:
+  	
+	* Enfoque de generación a utilzar (Bounded o Field) exhaustive generation: B | F
+
+	* Expresión regular a utilizar (literales enteros decimales, literales
+	enteros hexadecimales y literales decimales de punto flotante): D | H | F
+
+	* Longitud máxima de las cadenas a obtener: [0..10]
+
+\\ Ejemplo de ejecución:
+
+Generación de cadenas de longitud menor o igual a 5 utilizando el algoritmo Bounded
+Exhaustive Generation sobre la expresión regular de literales enteros decimales:
+
+	java -jar validGenerationApproachesComparison.jar B D 5
+
+Como resultado obtendremos la cantidad de cadenas generadas y el tiempo insumido en la generación:
+
+	Obtaining Bounded Exhaustive Generation Stats
+	Generated entries quantity = 159990
+	Generation time (seconds) = 0.076
